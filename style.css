@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(236, 24, 24);
+    font-family: digital;
+
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+@font-face{
+    font-family: digital;
+    src: url(digital.ttf);
+}
+section{
+    width: 100%;
+    height: 100%;
+    background-color: #0a0a0a;
+}
+
+#clock{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 450px;
+    height: 300px;
+    border: 10px solid #57606f;
+    border-radius: 27%;
+    font-size: 50px;
+    background-color: #070606;
+}
+#clock::before{
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    width: 80px;
+    height: 15px;
+    background-color: #57606f;
+    border-radius: 5px;
+}
+#clock1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 450px;
+    height: 300px;
+    border: 13px solid #57606f;
+    border-radius: 27%;
+}
+#clock1::before{
+    position: absolute;
+    bottom: -40px;
+    left: 30%;
+    content: "";
+    width: 10px;
+    height: 40px;
+    background-color: #57606f;
+    border-radius: 5px;
+    transform: rotate(25deg);
+}
+#clock1::after{
+    position: absolute;
+    bottom: -40px;
+    right: 30%;
+    content: "";
+    width: 10px;
+    height: 40px;
+    background-color: #57606f;
+    transform: rotate(-25deg);
+    border-radius: 5px;
+}
+
+#clock2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 430px;
+    height: 280px;
+    border: 8px solid #747d8c;
+    border-radius: 27%;
+}
+#clock div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 82px;
+    width: 30%;
+    height: 95%;
+    color: #2948ff;
+}
+div#amPm{
+    padding-top: 18px;
+    font-size: 40px;
+}
